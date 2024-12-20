@@ -61,7 +61,8 @@ The project is structured as follows:
 ```
 password-generator-rust/
 ├── src/
-│   ├── main.rs  # Entry point of the application and Logic for password generation
+│   ├── main.rs  # Entry point of the application
+|   ├── generate.rs  # Logic for password generation
 ├── Cargo.toml  # Project dependencies and metadata
 ```
 

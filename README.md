@@ -33,23 +33,23 @@ A simple and customizable password generator implemented in Rust. Generate secur
 Run the application from the command line:
 
 ```bash
-cargo run --release -- --length 16 --uppercase --lowercase --numbers --special
+cargo run --release generate --length 16 --uppercase --lowercase --number --symbol
 ```
 
 ### Options
 
-| Option Short | Option Long   | Description                               | Default  |
-| ------------ | ------------- | ----------------------------------------- | -------- |
-| `-L`         | `--length`    | Length of the password                    | 8        |
-| `-u`         | `--uppercase` | Include uppercase letters (A-Z)           | Disabled |
-| `-l`         | `--lowercase` | Include lowercase letters (a-z)           | Disabled |
-| `-n`         | `--numbers`   | Include numbers (0-9)                     | Disabled |
-| `-s`         | `--symbol`    | Include special characters (!@#$%^&\*...) | Disabled |
+| Option Short | Option Long   | Description                              | Default  |
+| ------------ | ------------- | ---------------------------------------- | -------- |
+| `-L`         | `--length`    | Length of the password                   | 8        |
+| `-u`         | `--uppercase` | Include uppercase letters (A-Z)          | Disabled |
+| `-l`         | `--lowercase` | Include lowercase letters (a-z)          | Disabled |
+| `-n`         | `--number`    | Include number (0-9)                     | Disabled |
+| `-s`         | `--symbol`    | Include symbol characters (!@#$%^&\*...) | Disabled |
 
 Example:
 
 ```bash
-cargo run --release -- --length 20 --uppercase --numbers
+cargo run --release generate --length 20 --uppercase --number
 ```
 
 This generates a 20-character password with uppercase letters and numbers.
